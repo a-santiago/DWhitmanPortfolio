@@ -1,0 +1,41 @@
+main>.container {
+    padding: 60px 15px 0;
+}
+
+.sticky-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    font-family: 'Cinzel', serif;
+}
+
+/* Default Styles */
+.header {
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-color: cornflowerblue;
+}
+
+/* Show Big image on bigger screens */
+@media only screen and (min-width: 992px) {
+    .header {
+        background-image: url("/img/DaneWhitmanLarge.png");
+        min-height: 400px;
+    }
+}
+
+/* Show small image on small screens */
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .header {
+        background-image: url("/img/DaneWhitmanSmall.png");
+    }
+}
