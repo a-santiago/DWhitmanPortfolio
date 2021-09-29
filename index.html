@@ -16,7 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat&display=swap" rel="stylesheet">
 
 
-    <!-- Convert this to an external style sheet -->
+    <!-- External style sheet -->
+    <link rel="stylesheet" href="/css/hoverCard.css">
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 
@@ -42,11 +43,11 @@
         </div>
     </nav>
     <!--  Main Content Area -->
-    <main class="flex-shrink-0">
+    <main class="flex-shrink-0 mt-5">
         <!-- Title -->
-        <header class="container-fluid d-flex flex-col justify-content-center header mt-5">
-            <div class="row mt-5">
-                <div class="col-12 col-sm-8 offset-sm-4 col-xl-12">
+        <header class="header container-fluid d-flex flex-column justify-content-center p-2">
+            <div class="row justify-content-center offset-0 offset-md-2 offset-lg-3 offset-xl-1 offset-xxl-0">
+                <div class="col-12 col-md-8 col-xl-6 px-4">
                     <h1 class="display-3 title">
                         <span class="fw-bold">Dane</span>&nbsp;Whitman
                     </h1>
@@ -62,8 +63,63 @@
             </div>
         </header>
         <!-- Project Section -->
-        <section id="myProjects">
+        <section id="myProjects" class="mt-5">
+            <div class="container">
+                <h1 class="title text-uppercase">My Projects</h1>
+                <div class="row row-cols-1 row-cols-md-3 g-2">
+                    <div class="col">
+                        <div class="hoverCard">
+                            <a href="#" target="_blank">
+                                <div class="card text-left">
 
+                                    <img class="card-img-top" src="/img/BTLogoBlue.png">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Bug Tracker</h4>
+                                        <p class="card-text">
+                                            Full Stack Project Built ion ASP.net and C#
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="hoverCard">
+                            <a href="#" target="_blank">
+                                <div class="card text-left">
+
+                                    <img class="card-img-top" src="/img/DevBlogBlue.png">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Dev Blog</h4>
+                                        <p class="card-text">
+                                            Full Stack Project Built ion ASP.net
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="hoverCard">
+                            <a href="#" target="_blank">
+                                <div class="card text-left">
+
+                                    <img class="card-img-top" src="/img/MoneyGrowBlue.png">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Money Grow</h4>
+                                        <p class="card-text">
+                                            Full Stack Project Built ion ASP.net
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <!-- Footer Section -->
