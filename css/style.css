@@ -1,3 +1,10 @@
+:root {
+    --jp-primaryColor: #6C747A;
+    --jp-secondaryColor: #91CBFB;
+    --formFocusColor: var(--jp-secondaryColor);
+    --formFocusShaddowColor: rgba(66, 148, 186, .2);
+}
+
 .sticky-nav {
     position: fixed;
     left: 0;
@@ -7,6 +14,11 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+}
+
+.form-control:focus {
+    border-color: var(--formFocusColor);
+    box-shadow: 0 0 0 .25rem var(--formFocusShaddowColor);
 }
 
 .title {
